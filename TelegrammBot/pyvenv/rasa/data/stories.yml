@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_did_that_help
+
+- story: sarcasm_path
+  steps:
+  - intent: mood_unhappy
+  - action: utter_sarcasm
+  - action: utter_did_that_help
+- story: sad_path
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+
+- story: привет и Пока
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: какая погода
+  steps:
+  - intent: what_whether
+  - action: utter_what_whether
+- story: привет, как зовут и пока
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_what_is_name
+  - intent: person_name
+  - action: utter_person_name
+  - intent: goodbye
+  - action: utter_goodbye
+- story: сколько время
+  steps:
+  - intent: ask_time
+  - action: utter_time
+
+- story: нейтральная реакция
+  steps:
+  - intent: fact
+  - action: utter_neutrality
+  - action: utter_did_that_help

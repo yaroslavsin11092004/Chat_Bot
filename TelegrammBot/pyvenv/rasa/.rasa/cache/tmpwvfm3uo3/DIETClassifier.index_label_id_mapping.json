@@ -1,0 +1,13 @@
+{
+  "0": "affirm",
+  "1": "ask_time",
+  "2": "bot_challenge",
+  "3": "deny",
+  "4": "fact",
+  "5": "goodbye",
+  "6": "greet",
+  "7": "mood_great",
+  "8": "mood_unhappy",
+  "9": "person_name",
+  "10": "what_whether"
+}
